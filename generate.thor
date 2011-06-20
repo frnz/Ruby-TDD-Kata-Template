@@ -7,6 +7,7 @@ class Generate < Thor
 				file.puts "end"
 			end
 			File.open("spec/#{filename}_spec.rb", "w") do |file|
+        file.puts 'require File.join(File.dirname(__FILE__), "../lib/string_calculator")\n\n'
 			  file.puts "describe #{filename.capitalize} do"
 				file.puts "end"
 			end
