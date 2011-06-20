@@ -30,3 +30,4 @@ DEPENDENCIES
   guard-shell
   rb-fsevent
   rspec
+  thor
